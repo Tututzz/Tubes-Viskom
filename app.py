@@ -130,12 +130,11 @@ def predict():
         except Exception as e:
             print(f"* Error during prediction: {e}")
             return f"Error processing image: {e}", 500
-        finally:
-
-            if os.path.exists(img_path):
-                print(f"* Deleting uploaded file: {img_path}")
-                os.remove(img_path)
-                pass
+#        finally:
+#            if os.path.exists(img_path):
+#                print(f"* Deleting uploaded file: {img_path}")
+#                os.remove(img_path)
+#                pass
 
 
     return redirect(url_for('index'))
