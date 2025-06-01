@@ -11,7 +11,7 @@ from tensorflow.keras.applications import ConvNeXtTiny
 app = Flask(__name__)
 
 # Configuration
-MODEL_PATH = 'model_opt-adam_lr-1e-05_bs-32.h5' 
+MODEL_PATH = 'models/model_opt-adam_lr-1e-05_bs-32.h5' 
 UPLOAD_FOLDER = 'static/uploads/'
 ALLOWED_EXTENSIONS = {'png', 'jpg', 'jpeg'}
 IMAGE_SIZE = (224, 224) 
